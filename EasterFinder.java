@@ -1,22 +1,21 @@
+// http://www.pleasanton.k12.ca.us/fhsweb/sos/WebLessons/LessonA3/Lab-A3-1.html
 
-/**
- * Write a description of class EasterFinder here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class EasterFinder
 {
-    
     public static void main(int year) {
         System.out.println("year is : " + year);
         int y = year;
+        // Divide y by 19 and call the remainder a.
         int a = y % 19;
         System.out.println ("a is: " + a);
+        
+        // Divide y by 100 and get a quotient b and a remainder c.
         int b = y / 100;
         System.out.println("b is: " + b);
         int c = y % 100;
         System.out.println("c is: " + c);
+        
+        // Divide b by 4 and get a quotient d and a remainder e.
         int d = b / 4;
         System.out.println("d is: " + d);
         int e = b % 4;
@@ -57,14 +56,4 @@ public class EasterFinder
         System.out.println ("month is: " + n);
         System.out.println("day is: " + (p + 1));
     }
-    
-    /**
-     * Constructor for objects of class EasterFinder
-     */
-    public EasterFinder()
-    {
-        // let y be the year
-        int y;
-    }
-
 }
